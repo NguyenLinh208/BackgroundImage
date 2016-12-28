@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/background_light">
+
+    <FrameLayout
+        android:id="@+id/initialProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/initial_loading_view"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/initialNetworkError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/initial_network_error"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/initialEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/initial_empty_list"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentViewParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+
+</FrameLayout>
